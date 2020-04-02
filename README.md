@@ -7,7 +7,7 @@
 
 * 登录微博
 * 切换到发现页面 [https://d.weibo.com](https://d.weibo.com)
-* F12打开浏览器控制台，把脚本内容全部复制粘贴到控制台，按回车
+* F12打开浏览器控制台，把WeiboAutoCommentTool.js内容全部复制粘贴到控制台，按回车
 * 然后执行以下代码：
 
 ```
