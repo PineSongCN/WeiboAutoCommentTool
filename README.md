@@ -13,9 +13,18 @@
 ```
 weiboAutoCommentTool.start({
   //评论内容，不填默认当前时间
-  content: "哇，不错不错，很赞！"	,
+  content: '哇，不错不错，很赞！'	,
   //评论间隔时间，默认秒
-  delay: 10 * 1000 
+  delay: 10
+});
+```
+随机评论
+```
+weiboAutoCommentTool.start({
+  //格式['','','']
+  content: ['评论1','评论2','评论3']	,
+  //评论间隔时间，默认秒
+  delay: 10
 });
 ```
 ## 其他工具
@@ -27,55 +36,4 @@ weiboAutoCommentTool.stop()
 ```
 //查看评论统计
 weiboAutoCommentTool.stat()
-```
-## 效果截图
-![效果图](screen-shot.jpg)
-
-## 测试日志（下列记录来自控制台复制）
-```
-weiboAutoCommentTool.start({
-    content: '哇，真不可思议~~'
-});
-
-2018-05-07 13:08:48: WeiboAutoCommentTool start running...
-2018-05-07 13:08:48: Use option: {"delay":10000,"content":"哇，真不可思议~~"}
-2018-05-07 13:08:48: WeiboAutoCommentTool running now.
-2018-05-07 13:08:48: Comment thread started.
------------------------------------------>
-2018-05-07 13:08:48: Commenting 4236962166085444
-2018-05-07 13:08:48: Comment list is not loaded, start loading...
-2018-05-07 13:08:48: Waiting comment list loading...
-2018-05-07 13:08:51: Sending comment content completed.
-<-----------------------------------------
------------------------------------------>
-2018-05-07 13:08:58: Commenting 4236975416123726
-2018-05-07 13:08:58: Comment list is not loaded, start loading...
-2018-05-07 13:08:58: Waiting comment list loading...
-2018-05-07 13:09:01: Sending comment content completed.
-<-----------------------------------------
------------------------------------------>
-2018-05-07 13:09:08: Commenting 4236986120511160
-2018-05-07 13:09:08: Comment list is not loaded, start loading...
-2018-05-07 13:09:08: Waiting comment list loading...
-2018-05-07 13:09:11: Sending comment content completed.
-<-----------------------------------------
-
-weiboAutoCommentTool.stat();
-2018-05-07 13:09:13: Comment queue: 
-["4236648663107765", "4236692271631492", "4236733615086129", "4236813700804304", "4236618468476778", "4236037263784663", "4235992158606659", "4236962166085444", "4236975416123726"]
-2018-05-07 13:09:13: Commented list: 
-["4236962166085444", "4236975416123726", "4236986120511160"]
-2018-05-07 13:09:13: STAT: Pending comment 9, Total commented 3
-
------------------------------------------>
-2018-05-07 13:09:18: Commenting 4236648663107765
-2018-05-07 13:09:18: Comment list is not loaded, start loading...
-2018-05-07 13:09:18: Waiting comment list loading...
-2018-05-07 13:09:21: Sending comment content completed.
-<-----------------------------------------
-
-weiboAutoCommentTool.stop();
-2018-05-07 13:09:21: User stoped
-2018-05-07 13:09:28: Comment action stoped, exit.
-2018-05-07 13:09:28: Comment thread action stoped, exit.
 ```
